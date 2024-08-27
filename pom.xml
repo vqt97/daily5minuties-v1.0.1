@@ -25,6 +25,7 @@
 		<module>eureka-server</module>
 		<module>auth-service</module>
 		<module>fraud-service</module>
+		<module>api-gateway</module>
 	</modules>
 	<scm>
 		<connection/>
@@ -72,7 +73,9 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud-dependencies-version}</version>
+				<version>${spring.cloud.dependencies.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
